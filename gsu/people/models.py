@@ -1,11 +1,11 @@
 from django.db import models
 
-from jsonfield import JSONField
-
 
 class Person(models.Model):
 
     first_name = models.CharField(max_length=40)
     last_name = models.CharField(max_length=40)
     email = models.EmailField()
-    personal_data = JSONField()
+
+    def __str__(self):
+        return "{first} {last}".format(first=self.first_name, last=self.last_name)

@@ -13,3 +13,6 @@ class Talk(models.Model):
 
     def time_until_start(self):
         return self.datetime - now()
+
+    def __str__(self):
+        return "{title} by {speaker} at {datetime}".format(title=self.title, speaker=self.speaker, datetime=self.datetime)
