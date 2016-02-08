@@ -3,6 +3,8 @@ Example Django App For GSU ACM Talk
 
 To start:
 
+Test
+
 Clone this repo:
 ```git clone https://github.com/bentleycook/gsu.git```
 
